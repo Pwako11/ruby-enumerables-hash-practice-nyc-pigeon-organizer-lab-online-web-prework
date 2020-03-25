@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
          if pigeon_list[name][color_gender_lives] == nil 
            pigeon_list[name][color_gender_lives] = []
           end 
-          pigeon_list[name][color_gender_lives].push(stats.to_s)
+          pigeon_list[name][color_gender_lives].push(details.to_s)
       
      end 
     end 
