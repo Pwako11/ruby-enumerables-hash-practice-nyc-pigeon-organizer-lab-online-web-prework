@@ -8,12 +8,11 @@ def nyc_pigeon_organizer(data)
    value.each do |details, all_names|
      all_names.each do |name|
        
-        if pigeon_list[name] ||= {}
-        end 
-        if pigeon_list[name][color_gender_lives] == nil 
-           pigeon_list[name][color_gender_lives] = []
-        end 
-          pigeon_list[name][color_gender_lives].push(details.to_s)
+        pigeon_list[name] ||= {}
+         
+        pigeon_list[name][color_gender_lives] ||= []
+        
+        pigeon_list[name][color_gender_lives].push(details.to_s)
       end 
     end 
   end 
