@@ -2,7 +2,7 @@ require 'pry'
 require 'pp'
 
 def nyc_pigeon_organizer(data)
-  pigeon_listgeon_list = {}
+  pigeon_list = {}
   
   data.each do |color_gender_lives, value|
    value.each do |details, all_names|
